@@ -32,12 +32,13 @@
 	
 	<!-- third party -->
 	<lombok.version>1.16.20</lombok.version>
-	<xxl-job-core.version>1.9.1</xxl-job-core.version>
+	<xxl-job-core.version>2.2.0-SNAPSHOT</xxl-job-core.version>
 	<jd-agency.version>1.0.0</jd-agency.version>
     <jd-security.version>1.0.0</jd-security.version>
     <alipay-trade-sdk.version>1.0.0</alipay-trade-sdk.version>
     <alipay-sdk-java.version>3.4.49</alipay-sdk-java.version>
-     <apollo.client.version>1.2.0</apollo.client.version>
+    <apollo.client.version>1.2.0</apollo.client.version>
+    <sc.common.version>1.0.0-SNAPSHOT</sc.common.version>
   </properties>
   
   <dependencyManagement> 
@@ -71,13 +72,18 @@
             
             <!-- Import dependency management from mybatis spring boot -->
             <dependency>
-	            <groupId>org.mybatis.spring.boot</groupId>
-				<artifactId>mybatis-spring-boot</artifactId>
-				<version>${mybatis-spring-boot.version}</version>
-				<type>pom</type>
-                <scope>import</scope>
-            </dependency>
-	      
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>${mybatis-spring-boot.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-jdbc</artifactId>
+				</exclusion>
+			</exclusions>
+		    <type>pom</type>
+            <scope>import</scope>
+		</dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
