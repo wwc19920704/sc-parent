@@ -9,7 +9,7 @@
     <properties>
         <!-- spring jar  -->
         <spring-boot-dependencies.version>1.5.12.RELEASE</spring-boot-dependencies.version>
-        <springframework.version>4.3.16.RELEASE</springframework.version>
+        <springframework.version>4.3.29.RELEASE</springframework.version>
         <spring-cloud-dependencies.version>Edgware.SR3</spring-cloud-dependencies.version>
         <!-- environment properties -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
