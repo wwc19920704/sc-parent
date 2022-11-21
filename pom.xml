@@ -33,7 +33,7 @@
 
         <!-- third party -->
         <lombok.version>1.16.20</lombok.version>
-        <xxl-job-core.version>2.2.0-SNAPSHOT</xxl-job-core.version>
+        <xxl-job-core.version>2.3.1</xxl-job-core.version>
         <jd-agency.version>1.0.0</jd-agency.version>
         <jd-security.version>1.0.0</jd-security.version>
         <alipay-trade-sdk.version>1.0.0</alipay-trade-sdk.version>
